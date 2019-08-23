@@ -137,7 +137,7 @@ end
 
 def num_points_scored(player_name)
    hashball = game_hash
-   if hashball[:home][:players][player_name] == true
+   if hashball[:home][:players].key?[player_name] == true
       hashball[:home][:players][player_name][:points]
    else 
      hashball[:away][:players][player_name][:points]
