@@ -137,7 +137,7 @@ end
 
 
 
-ddef num_points_scored(player_name)
+def num_points_scored(player_name)
   hash_game = game_hash
   hash_game.each do |location, info| 
     info.each do |attribute, stats| 
