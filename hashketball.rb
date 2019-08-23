@@ -1,8 +1,8 @@
 require "pry"  # Write your code here!
 def game_hash
   {
-  :home_team => {
-    :name => "Brooklyn Nets",
+  :home => {
+    :team_name => "Brooklyn Nets",
     :colors => ["Black", "White"],
     :players => [
       {
@@ -62,8 +62,8 @@ def game_hash
       }
     ]
   },
-  :away_team => {
-    :name => "Charlotte Hornets",
+  :away => {
+    :team_name => "Charlotte Hornets",
     :colors => ["Turquoise", "Purple"],
     :players => [
       {
