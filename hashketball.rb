@@ -139,12 +139,12 @@ def num_points_scored(player_name)
   hashball = game_hash
   hashball[:home][:players].map {|players_hash|
     if players_hash.keys.first == player_name  
-      players_hash[player_name][:points].to_i
+      return players_hash[player_name][:points]
     end
   }  
   hashball[:away][:players].map {|players_hash|
     if players_hash.keys.first == player_name  
-      players_hash[player_name][:points].to_i
+      return players_hash[player_name][:points]
     end
   }  
  end
