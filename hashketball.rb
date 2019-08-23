@@ -145,7 +145,7 @@ end
 
 
 def num_points_scored (player_name)
-  scored_points = []
+  scored_points = nil
 
   game_hash.each do |team, details_hash|
     players_array = details_hash[:players]
@@ -159,7 +159,7 @@ def num_points_scored (player_name)
 end
   
 def shoe_size(player_name)
-  shoes_size = []
+  shoes_size = nil
 
   game_hash.each do |team, team_hash|
     players_array = team_hash[:players]
