@@ -208,9 +208,9 @@ def player_stats(player_name)
   game_hash.each do |team, team_hash|
     team_hash[:players].each do |stats|
 
-      if stats[:name] == players_name
+      if stats[:name] == player_name
         stats.delete(:name)
-        players_stats = stats
+        player_stats = stats
       end
     end
   end
