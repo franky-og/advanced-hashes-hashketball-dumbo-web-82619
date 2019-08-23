@@ -138,6 +138,6 @@ end
 def num_points_scored(player_name)
    hashball = game_hash
    if hashball[player_name] == true
-     hashball[player_name]
+     hashball[player_name][points]
   
 
