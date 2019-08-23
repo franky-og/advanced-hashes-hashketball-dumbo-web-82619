@@ -200,7 +200,7 @@ def player_numbers (team_name)
       end
     end
   end
-  player_numbers_list
+  player_numbers_array
 end
 
 def player_stats(player_name)
@@ -220,7 +220,7 @@ def player_stats(player_name)
   rebounds = 0
     game_hash.each do | team, team_hash|
       team_hash[:players].each do | stats |
-        if stats[:shoe] > big_shoes
+        if stats[:shoe] > big_shoes_players
           big_shoes_players = stats[:shoe]
           rebounds = stats[:rebounds]
         end
