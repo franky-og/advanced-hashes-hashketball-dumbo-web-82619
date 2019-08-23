@@ -78,7 +78,7 @@ def game_hash
       :slam_dunks => 2
       },
       {
-      :name => "Bismak Biyombo", 
+      :name => "Bismack Biyombo", 
       :number => 0,
       :shoe => 16,
       :points => 12,
@@ -158,4 +158,4 @@ def num_points_scored (name)
   answer
 end
   
-
+num_points_scored("Bismack Biyombo")
