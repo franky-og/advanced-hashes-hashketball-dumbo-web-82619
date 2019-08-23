@@ -148,3 +148,15 @@ end
 #   end
 # end
 
+
+def team_colors(team)
+  new_array = []
+  game_hash.each do |keys, values|
+    values.each do |data_labels, data|
+      if data == team
+        new_array << game_hash[keys][:colors]
+      end
+    end
+  end
+  new_array.flatten
+end
