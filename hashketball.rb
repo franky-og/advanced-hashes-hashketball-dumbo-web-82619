@@ -141,7 +141,7 @@ def num_points_scored(player_name)
       hashball[:home][:players][player_name][:points]
    else 
      hashball[:away][:players][player_name][:points]
-   
+   end
  end
   
 
