@@ -140,7 +140,7 @@ end
 def num_points_scored(player_name)
   hashball = game_hash
   hashball[:home][:players].map {|players_hash|
-    puts players_hash.keys
+    #puts players_hash.keys
     if players_hash.keys == player_name  
       return players_hash[player_name][:points]
     end
@@ -152,5 +152,5 @@ def num_points_scored(player_name)
   }  
  end
   
-num_points_scored("Jason Terry")
+#num_points_scored("Jason Terry")
 
