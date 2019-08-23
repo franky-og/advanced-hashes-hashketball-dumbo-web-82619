@@ -221,7 +221,7 @@ def player_stats(player_name)
     game_hash.each do | team, team_hash|
       team_hash[:players].each do | player_stats_hash |
         if player_stats_hash[:shoe] > big_shoes_players
-          big_shoes_players = stats[:shoe]
+          big_shoes_players = player_stats_hash[:shoe]
           rebounds = player_stats_hash[:rebounds]
         end
       end
