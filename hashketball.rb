@@ -59,7 +59,7 @@ def game_hash
   ]
     
   
-}
+},
 :away => {
    :team_name => "Charlotte Hornets",
   :color => ["Turquoise", "Purple"],
@@ -90,8 +90,8 @@ def game_hash
       :points => 24,
       :rebounds => 12,
       :assists => 12,
-      :steals => 4.
-      :blocks => 5.
+      :steals => 4,
+      :blocks => 5,
       :slam_dunks => 5
     },
     "Ben Gordon" => {
