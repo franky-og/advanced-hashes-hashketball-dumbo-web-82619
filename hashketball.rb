@@ -228,7 +228,7 @@ def player_stats(player_name)
     end
   rebounds
 end
-
+end
 def most_points_scored
   most_points = 0
   mvp = ''
