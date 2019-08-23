@@ -137,12 +137,12 @@ end
 
 
 
-ddef num_points_scored(name)
+ddef num_points_scored(player_name)
   hash_game = game_hash
   hash_game.each do |location, info| 
-    info.each do |attribute, stuff| 
-      if stuff.include?(name) 
-       return hash[location][attribute][name][:points]
+    info.each do |attribute, stats| 
+      if stats.include?(player_name) 
+       return hash[location][attribute][plame][:points]
       end
     end
   end
