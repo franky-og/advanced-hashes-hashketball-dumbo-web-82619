@@ -228,7 +228,7 @@ def big_shoe_rebounds
     end
   rebounds
 end
-  player_stats_hash
+  
 end
 
 def most_points_scored
