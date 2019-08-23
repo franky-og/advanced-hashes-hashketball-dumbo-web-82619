@@ -249,10 +249,10 @@ end
 def winning_team
   total_points = 0
   winners = ''
-  game_hash.each do |home_away, keys|
+  game_hash.each do |team, team_hash|
     team_points = 0
     team_name = game_hash[home_away][:team_name]
-    keys[:players].each do |player|
+    team_hash[:players].each do |player|
       points = player[:points]
       team_points += points
     end
