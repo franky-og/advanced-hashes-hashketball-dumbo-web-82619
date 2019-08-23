@@ -137,20 +137,14 @@ end
 
 
 
-def num_points_scored(player_name)
-  hashball = game_hash
-  hashball[:home][:players].map {|players_hash|
-    #puts players_hash.keys
-    if players_hash.keys.include?(player_name)
-      return players_hash[player_name][:points]
+ddef num_points_scored(name)
+  hash_game = game_hash
+  hash_game.each do |location, info| 
+    info.each do |attribute, stuff| 
+      if stuff.include?(name) 
+       return hash[location][attribute][name][:points]
+      end
     end
-  }  
-  hashball[:away][:players].map {|players_hash|
-    if players_hash.keys.include?(player_name)  
-      return players_hash[player_name][:points]
-    end
-  }  
- end
-  
-#num_points_scored("Jason Terry")
+  end
+end
 
