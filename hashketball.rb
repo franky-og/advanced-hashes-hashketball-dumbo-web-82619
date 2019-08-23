@@ -214,7 +214,8 @@ def player_stats(player_name)
       end
     end
   end
-  
+  player_stats
+end  
 def big_shoe_rebounds
   big_shoes_players = 0
   rebounds = 0
@@ -228,8 +229,7 @@ def big_shoe_rebounds
     end
   rebounds
 end
-  player_stats
-end
+
 
 def most_points_scored
   most_points = 0
