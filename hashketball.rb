@@ -142,7 +142,7 @@ ddef num_points_scored(player_name)
   hash_game.each do |location, info| 
     info.each do |attribute, stats| 
       if stats.include?(player_name) 
-       return hash[location][attribute][name][:points]
+       return hash[location][attribute][player_name][:points]
       end
     end
   end
