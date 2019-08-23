@@ -15,7 +15,37 @@ def game_hash {
       :blocks =>
       :slam_dunks =>
     },
-   "" => {
+    "" => {
+      :number =>
+      :shoe =>
+      :points =>
+      :rebounds =>
+      :assists =>
+      :steals =>
+      :blocks =>
+      :slam_dunks =>
+    },
+    "" => {
+      :number =>
+      :shoe =>
+      :points =>
+      :rebounds =>
+      :assists =>
+      :steals =>
+      :blocks =>
+      :slam_dunks =>
+    },
+    "" => {
+      :number =>
+      :shoe =>
+      :points =>
+      :rebounds =>
+      :assists =>
+      :steals =>
+      :blocks =>
+      :slam_dunks =>
+    },
+    "" => {
       :number =>
       :shoe =>
       :points =>
