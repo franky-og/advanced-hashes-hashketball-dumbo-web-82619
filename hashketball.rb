@@ -148,27 +148,3 @@ end
 #   end
 # end
 
-#Points scored
-#Build a method, `num_points_scored` that takes in an argument of a player's name and returns the number of points scored for that player.
-def num_points_scored(name) 
-  hash = game_hash
-  game_hash.each do |teams_playing, data| 
-    data[:players].each do |player_name, player_data|
-      if  player_name == name
-        return hash[teams_playing][:players][name][:points]
-      end 
-    end 
-  end 
-end
-
-def team_colors(team)
-  new_array = []
-  game_hash.each do |keys, values|
-    values.each do |data_labels, data|
-      if data == team
-        new_array << game_hash[keys][:colors]
-      end
-    end
-  end
-  new_array.flatten
-end
