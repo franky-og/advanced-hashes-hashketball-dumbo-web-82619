@@ -151,7 +151,7 @@ def num_points_scored (player_name)
     players_array = team_hash[:players]
       players_array.each do |player_stats_hash|
         if player_stats_hash[:name] == player_name
-          points_made = player_stats_hash[:points]
+          points = player_stats_hash[:points]
         end
       end
   end
@@ -204,7 +204,7 @@ def player_numbers (team_name)
 end
 
 def player_stats(player_name)
-  players_stats = {}
+  player_stats = {}
   game_hash.each do |team, team_hash|
     team_hash[:players].each do |stats|
 
@@ -215,20 +215,20 @@ def player_stats(player_name)
     end
   end
   
-def big_shoe_rebounds
+  def big_shoe_rebounds
   big_shoes_players = 0
   rebounds = 0
     game_hash.each do | team, team_hash|
-      team_hash[:players].each do | player_stats_hash |
-        if player_stats_hash[:shoe] > big_shoes_players
-          big_shoes_players = player_stats_hash[:shoe]
-          rebounds = player_stats_hash[:rebounds]
+      team_hash[:players].each do | stats |
+        if stats[:shoe] > big_shoes_players
+          big_shoes_players = stats[:shoe]
+          rebounds = stats[:rebounds]
         end
       end
     end
   rebounds
 end
-  
+  player_stats
 end
 
 def most_points_scored
