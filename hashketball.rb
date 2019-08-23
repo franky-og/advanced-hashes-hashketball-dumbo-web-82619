@@ -137,14 +137,18 @@ end
 
 
 
-def num_points_scored(player_name)
-  hash_ball = game_hash
-  hash_ball.each do |location, team_data|
-    team_data.each do |attribute, data|
-    end
+def num_points_scored (name)
+  answer = nil
+
+  game_hash.each do |team, details_hash|
+    players_array = details_hash[:players]
+      players_array.each do |player_details_hash|
+        if player_details_hash[:name] == name
+          answer = player_details_hash[:points]
+        end
+      end
   end
+  answer
 end
-
-
   
 
