@@ -1,5 +1,6 @@
 require "pry"  # Write your code here!
-def game_hash {
+def game_hash 
+  return {
 
 :home => {
   :team_name => "Brooklyn Nets"
@@ -115,6 +116,7 @@ def game_hash {
     },
   ]
 }
+end
 
 def good_practices
   game_hash.each do |location, team_data|
