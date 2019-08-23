@@ -1,6 +1,6 @@
 require "pry"  # Write your code here!
 def game_hash 
-  return {
+{
 
 :home => {
   :team_name => "Brooklyn Nets",
