@@ -40,20 +40,20 @@ def game_hash {
       :shoe => 19,
       :points => 26,
       :rebounds => 11,
-      :assists =>
-      :steals =>
-      :blocks =>
-      :slam_dunks =>
+      :assists => 6,
+      :steals => 3,
+      :blocks => 8,
+      :slam_dunks => 5
     },
-    "" => {
-      :number =>
-      :shoe =>
-      :points =>
-      :rebounds =>
-      :assists =>
-      :steals =>
-      :blocks =>
-      :slam_dunks =>
+    "Jason Terry" => {
+      :number => 31,
+      :shoe => 15,
+      :points => 19,
+      :rebounds => 2,
+      :assists => 2,
+      :steals => 4,
+      :blocks => 11,
+      :slam_dunks => 1
     },
   ]
     
