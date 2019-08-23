@@ -228,8 +228,6 @@ def player_stats(player_name)
     end
   rebounds
 end
-  player_stats
-end
 
 def most_points_scored
   most_points = 0
