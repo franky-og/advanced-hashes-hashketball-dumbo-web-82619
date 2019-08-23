@@ -146,7 +146,7 @@ def num_points_scored(player_name)
     end
   }  
   hashball[:away][:players].map {|players_hash|
-    if players_hash.keys == player_name  
+    if players_hash.keys.include?(player_name)  
       return players_hash[player_name][:points]
     end
   }  
