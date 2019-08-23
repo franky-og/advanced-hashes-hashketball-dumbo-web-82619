@@ -215,7 +215,7 @@ def player_stats(player_name)
     end
   end
   
-  def big_shoe_rebounds
+def big_shoe_rebounds
   big_shoes_players = 0
   rebounds = 0
     game_hash.each do | team, team_hash|
@@ -228,7 +228,9 @@ def player_stats(player_name)
     end
   rebounds
 end
+  player_stats
 end
+
 def most_points_scored
   most_points = 0
   mvp = ''
