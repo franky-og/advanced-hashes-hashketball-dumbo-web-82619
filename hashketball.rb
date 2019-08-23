@@ -204,13 +204,13 @@ def player_numbers (team_name)
 end
 
 def player_stats(player_name)
-  player_stats = {}
+  players_stats = {}
   game_hash.each do |team, team_hash|
     team_hash[:players].each do |stats|
 
-      if stats[:name] == player_name
+      if stats[:name] == players_name
         stats.delete(:name)
-        player_stats = stats
+        players_stats = stats
       end
     end
   end
