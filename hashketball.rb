@@ -139,8 +139,9 @@ end
 
 def num_points_scored(player_name)
   hash_ball = game_hash
-  hash_ball.map {|location|
-  location[:players].map {|scores|
+  hash_ball.each do |location, team_data|
+    team_data.each do |attribute, data|
+      
    
   
 
